@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "./logo.svg";
 import { Counter } from "./features/counter/counter";
-import "./App.css";
+import "./app.css";
 import { LadderlyTopNav } from "./features/ladderly-top-nav/ladderly-top-nav";
 
 function App() {
