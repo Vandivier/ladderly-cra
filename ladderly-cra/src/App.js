@@ -1,14 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import { Counter } from "./features/counter/counter";
+import "./App.css";
+import { LadderlyTopNav } from "./features/ladderly-top-nav/ladderly-top-nav";
 
 function App() {
   return (
     <div className="App">
+      <LadderlyTopNav />
+
       <header className="App-header">
+        Ladderly.io
         <img src={logo} className="App-logo" alt="logo" />
         <Counter />
+      </header>
+
+      <section>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -50,7 +57,7 @@ function App() {
             React Redux
           </a>
         </span>
-      </header>
+      </section>
     </div>
   );
 }
