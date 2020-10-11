@@ -1,8 +1,10 @@
-import React from "react";
-import logo from "./logo.svg";
-import { Counter } from "./features/counter/counter";
 import "./app.css";
+
+import React from "react";
+
+import { Counter } from "./features/counter/counter";
 import { LadderlyTopNav } from "./features/ladderly-top-nav/ladderly-top-nav";
+import logo from "./logo.svg";
 
 function App() {
   return (
@@ -17,7 +19,7 @@ function App() {
 
       <section>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit <code>src/app.tsx</code> and save to reload.
         </p>
         <span>
           <span>Learn </span>
