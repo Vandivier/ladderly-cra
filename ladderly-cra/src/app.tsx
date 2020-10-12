@@ -27,6 +27,10 @@ const useStyles = makeStyles({
   root: {
     maxWidth: 345,
   },
+  ladderlyCardActionArea: {
+    display: "flex",
+    "flex-direction": "column",
+  },
   media: {
     height: 140,
   },
@@ -36,6 +40,9 @@ const useStyles = makeStyles({
     width: "5rem",
   },
   featureCards: {
+    display: "flex",
+    "flex-direction": "column",
+    "justify-content": "space-between",
     margin: "0px 8px",
   },
 });
@@ -52,10 +59,10 @@ function App() {
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
       </header>
 
-      <Container maxWidth="md" style={{ margin: "24px auto" }}>
-        <Grid container spacing={4}>
+      <Container maxWidth="md" style={{ display: "flex", margin: "24px auto" }}>
+        <Grid container>
           <Grid item className={classes.featureCards} component={Card} xs>
-            <CardActionArea>
+            <CardActionArea className={classes.ladderlyCardActionArea}>
               <PersonAddIcon className={classes.bigIcon} />
               <CardContent>Get Referrals for Work or School</CardContent>
             </CardActionArea>
@@ -66,7 +73,7 @@ function App() {
           </Grid>
 
           <Grid item className={classes.featureCards} component={Card} xs>
-            <CardActionArea>
+            <CardActionArea className={classes.ladderlyCardActionArea}>
               <SchoolIcon className={classes.bigIcon} />
               <CardContent>Learn Skills and Network</CardContent>
             </CardActionArea>
@@ -77,7 +84,7 @@ function App() {
           </Grid>
 
           <Grid item className={classes.featureCards} component={Card} xs>
-            <CardActionArea>
+            <CardActionArea className={classes.ladderlyCardActionArea}>
               {/* {console.log(classes.bigIcon)} */}
               <SupportIcon className={classes.bigIcon} />
               <CardContent>Help Others and Earn Side Income</CardContent>
@@ -89,7 +96,7 @@ function App() {
           </Grid>
 
           <Grid item className={classes.featureCards} component={Card} xs>
-            <CardActionArea>
+            <CardActionArea className={classes.ladderlyCardActionArea}>
               <MonetizationOnIcon className={classes.bigIcon} />
               <CardContent>Strategic Wealth Management</CardContent>
             </CardActionArea>
