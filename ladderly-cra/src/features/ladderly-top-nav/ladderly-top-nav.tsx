@@ -18,6 +18,9 @@ const useStyles = makeStyles((theme) => ({
   menuButton: {
     marginRight: theme.spacing(2),
   },
+  signInButton: {
+    marginLeft: "auto",
+  },
   title: {
     flexGrow: 1,
   },
@@ -31,18 +34,18 @@ export function LadderlyTopNav() {
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
-          <IconButton
+          <Button color="inherit">Ladderly.io</Button>
+          {/* <IconButton
             edge="start"
             className={classes.menuButton}
             color="inherit"
             aria-label="menu"
           >
             <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" className={classes.title}>
-            News
-          </Typography>
-          <Button color="inherit">Login</Button>
+          </IconButton> */}
+          <Button color="inherit" className={classes.signInButton}>
+            Sign In
+          </Button>
         </Toolbar>
       </AppBar>
     </div>

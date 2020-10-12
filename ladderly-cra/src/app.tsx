@@ -55,7 +55,19 @@ function App() {
       <LadderlyTopNav />
 
       <header className="App-header">
-        <h1>Ladderly.io</h1>
+        <h1>Technology Career Accelerator</h1>
+        {/* <p>
+          Level-up from mid-level to senior and beyond, or just find a way to
+          get your foot in the door.
+        </p> */}
+        <p>
+          Select from the options below to learn more or get to the good part
+          and{" "}
+          <span style={{ cursor: "pointer", textDecoration: "underline" }}>
+            sign up now
+          </span>
+          .
+        </p>
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
       </header>
 
